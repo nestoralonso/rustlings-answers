@@ -5,11 +5,13 @@
 // I AM NOT DONE
 
 fn main() {
-    let a = ???
+    let a = [5; 100];
+    // let a = 0..100;
 
     if a.len() >= 100 {
-        println!("Wow, that's a big array!");
+        dbg!(&a);
+        println!("Wow, that's a big array! {}", a.len());
     } else {
-        println!("Meh, I eat arrays like that for breakfast.");
+        println!("Meh, I eat arrays like that for breakfast. {:#?}", &a);
     }
 }
