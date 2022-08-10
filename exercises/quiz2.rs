@@ -18,7 +18,6 @@
 // - The output element is going to be a Vector of strings.
 // Execute `rustlings hint quiz2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 #[derive(PartialEq, Debug)]
 pub enum Command {
     Uppercase,
@@ -31,10 +30,8 @@ mod my_module {
 
     // TODO: Complete the function signature!
     pub fn transformer(input: Vec<(String, Command)>) -> Vec<String> {
-        // TODO: Complete the output declaration!
         let mut output: Vec<String> = vec![];
         for (string, command) in input.iter() {
-            // TODO: Complete the function body. You can do it!
             output.push(
                 apply_cmd(&string, &command)
             );
@@ -49,7 +46,7 @@ mod my_module {
         let res = match command {
             Command::Uppercase => st.to_uppercase().to_string(),
             Command::Trim => st.trim().to_string(),
-            Command::Append(times) => st.to_owned() + &"bar".repeat(times),
+            Command::Append(times) => st.to_owned() + &"bar".repeat(*times),
         };
 
         res.to_string()
