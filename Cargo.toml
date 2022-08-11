@@ -20,6 +20,10 @@ glob = "0.3.0"
 name = "rustlings"
 path = "src/main.rs"
 
+[[bin]]
+name = "rustlings2"
+path = "exercises/threads/threads3.rs"
+
 [dev-dependencies]
 assert_cmd = "0.11.0"
 predicates = "1.0.1"
