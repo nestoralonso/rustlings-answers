@@ -22,7 +22,7 @@ path = "src/main.rs"
 
 [[bin]]
 name = "rustlings2"
-path = "exercises/threads/threads3.rs"
+path = "exercises/macros/macros4.rs"
 
 [dev-dependencies]
 assert_cmd = "0.11.0"
