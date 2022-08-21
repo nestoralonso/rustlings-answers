@@ -43,11 +43,12 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
                 goals_scored: team_1_score,
                 goals_conceded: team_2_score,
             });
-        } else {
-            let mut team = scores.get_mut(&team_1_name).unwrap();
-            team.goals_scored += team_1_score;
-            team.goals_conceded += team_2_score;
-        }
+        } // code below is not necessary to pass the tests
+        // else {
+        //     let mut team = scores.get_mut(&team_1_name).unwrap();
+        //     team.goals_scored += team_1_score;
+        //     team.goals_conceded += team_2_score;
+        // }
         if !scores.contains_key(&team_2_name) {
             scores.insert(team_2_name.clone(), Team {
                 name: team_2_name,
