@@ -4,7 +4,6 @@
 //
 // Execute `rustlings hint lifetimes3` or use the `hint` watch subcommand for a hint.
 
-
 struct Book<'a> {
     author: &'a str,
     title: &'a str,
